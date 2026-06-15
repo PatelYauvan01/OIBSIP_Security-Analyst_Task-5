@@ -1,20 +1,26 @@
-```markdown
 # Research Report on Social Engineering Attacks
 
 ## 1. Introduction
 
-Social engineering is a cybersecurity attack technique that manipulates human psychology rather than exploiting only technical vulnerabilities. Attackers use deception, trust, fear, curiosity, or urgency to trick individuals into revealing confidential information, providing access, or performing harmful actions.
+Social engineering is a cybersecurity attack technique where attackers manipulate people into revealing confidential information or performing actions that compromise security.
 
-Unlike traditional cyberattacks that target systems directly, social engineering targets the weakest link in security — human behavior.
+Unlike traditional cyberattacks that mainly exploit software or hardware weaknesses, social engineering attacks exploit **human psychology**, such as trust, fear, urgency, curiosity, or lack of awareness.
+
+Attackers use these techniques to steal:
+
+* Login credentials
+* Financial information
+* Personal data
+* Confidential business information
 
 Common social engineering attacks include:
 
-- Phishing
-- Pretexting
-- Baiting
-- Spear Phishing
-- Vishing
-- Tailgating
+* Phishing
+* Pretexting
+* Baiting
+* Spear Phishing
+* Vishing
+* Tailgating
 
 ---
 
@@ -22,306 +28,269 @@ Common social engineering attacks include:
 
 ## 2.1 Phishing Attack
 
-### Description
+### Overview
 
-Phishing is one of the most common social engineering attacks where attackers send fraudulent emails, messages, or websites that appear to come from trusted organizations.
+Phishing is a technique where attackers send fake emails, messages, or websites that appear to come from trusted sources. The purpose is to trick users into providing sensitive information or downloading malicious files.
 
-The goal is to steal sensitive information such as:
+### How Phishing Works
 
-- Usernames and passwords
-- Banking details
-- Credit card information
-- Personal data
+1. The attacker creates a fake email or website.
+2. The victim receives a message that appears legitimate.
+3. The victim clicks a malicious link or opens an attachment.
+4. Login details or personal information are stolen.
 
----
+### Impact of Phishing
 
-## How Phishing Works
+Phishing attacks can cause:
 
-1. Attacker creates a fake email or website.
-2. The message appears to come from a trusted source.
-3. Victim clicks a malicious link or downloads an attachment.
-4. The attacker collects sensitive information or installs malware.
+* Financial loss
+* Identity theft
+* Unauthorized system access
+* Data breaches
+* Malware infection
 
-Example:
+### Case Study: Google and Facebook Phishing Attack (2013–2015)
 
-A fake banking email asks a user to "verify account details" through a fraudulent website.
+Between 2013 and 2015, Google and Facebook became victims of a large phishing attack.
 
----
+A cybercriminal pretended to be a trusted supplier and sent fake invoices to employees.
 
-## Impact of Phishing
+**Impact:**
 
-- Financial loss
-- Identity theft
-- Data breaches
-- Malware infections
-- Unauthorized account access
+* Around $100 million was stolen.
+* Fake business emails were used.
+* The attacker was later arrested.
 
----
+This incident proved that even large organizations can become victims of social engineering.
 
-## Real-World Example: Google and Facebook Phishing Attack (2013–2015)
+### Prevention Methods
 
-A cybercriminal created fake invoices pretending to be a trusted hardware supplier.
+Organizations can prevent phishing by:
 
-Impact:
-
-- Google and Facebook lost approximately $100 million.
-- Attackers used fake emails and business documents.
-- The attacker was later arrested.
-
-This attack showed how even large technology companies can become victims of social engineering.
-
----
-
-## Prevention Methods
-
-- Verify sender email addresses.
-- Avoid clicking unknown links.
-- Enable Multi-Factor Authentication (MFA).
-- Use email filtering systems.
-- Conduct employee cybersecurity awareness training.
+* Checking sender email addresses carefully
+* Avoiding suspicious links
+* Using Multi-Factor Authentication (MFA)
+* Installing email filtering solutions
+* Conducting cybersecurity awareness training
 
 ---
 
 # 2.2 Pretexting Attack
 
-## Description
+## Overview
 
-Pretexting is a social engineering attack where attackers create a fake identity or situation (called a pretext) to gain the victim's trust and collect information.
+Pretexting is a social engineering technique where attackers create a fake identity or situation to gain the victim's trust.
 
-Attackers often pretend to be:
+Attackers may pretend to be:
 
-- Company employees
-- IT support staff
-- Bank representatives
-- Government officials
-
----
+* IT employees
+* Bank officers
+* Company executives
+* Government representatives
 
 ## How Pretexting Works
 
-1. Attacker researches the target.
-2. A believable fake scenario is created.
-3. Attacker contacts the victim.
-4. Victim shares confidential information.
-5. Information is used for further attacks.
-
-Example:
-
-An attacker pretending to be IT support asks an employee for login credentials to "fix an account problem."
-
----
+1. The attacker collects information about the victim.
+2. A believable fake story is created.
+3. The attacker contacts the victim.
+4. The victim shares confidential information.
+5. The attacker uses the information for malicious purposes.
 
 ## Impact of Pretexting
 
-- Leakage of confidential information
-- Unauthorized system access
-- Corporate espionage
-- Identity fraud
+Pretexting can result in:
 
----
+* Information leakage
+* Identity theft
+* Unauthorized access
+* Financial fraud
 
-## Real-World Example: Twitter Bitcoin Scam (2020)
+## Case Study: Twitter Bitcoin Scam (2020)
 
-Attackers used social engineering techniques against Twitter employees.
+In 2020, attackers targeted Twitter employees using social engineering methods.
 
-Attack Process:
+Attackers manipulated employees and gained access to internal tools.
 
-- Attackers pretended to be internal staff.
-- Employees were tricked into giving access credentials.
-- High-profile Twitter accounts were compromised.
+**Impact:**
+
+* Multiple high-profile accounts were compromised.
+* Fake cryptocurrency messages were posted.
+* Users lost money through the scam.
 
 Affected accounts included:
 
-- Elon Musk
-- Barack Obama
-- Bill Gates
-
-Impact:
-
-- Attackers promoted a cryptocurrency scam.
-- Thousands of dollars were stolen.
-
----
+* Elon Musk
+* Barack Obama
+* Bill Gates
 
 ## Prevention Methods
 
-- Verify identities before sharing information.
-- Follow strict access control policies.
-- Train employees to recognize manipulation tactics.
-- Never share passwords through calls or emails.
-- Use least privilege access principles.
+* Verify identities before sharing information
+* Never share passwords
+* Apply least privilege access control
+* Train employees against manipulation techniques
 
 ---
 
 # 2.3 Baiting Attack
 
-## Description
+## Overview
 
-Baiting uses curiosity or greed to trick victims into performing unsafe actions.
+Baiting attacks use attractive offers or objects to trick users into unsafe actions.
 
-Attackers offer something attractive, such as:
+Attackers may use:
 
-- Free software
-- Free downloads
-- USB drives
-- Fake rewards
-
-The victim unknowingly installs malware or gives away information.
-
----
+* Free software downloads
+* Fake rewards
+* Infected USB drives
+* Malicious attachments
 
 ## How Baiting Works
 
-1. Attacker provides a tempting offer.
-2. Victim interacts with the bait.
-3. Malware is installed or information is stolen.
-4. Attacker gains unauthorized access.
-
-Example:
-
-A USB drive labeled "Employee Salary Details" is left in an office parking area. A curious employee connects it to a company computer, installing malware.
-
----
+1. The attacker creates an attractive trap.
+2. The victim interacts with the bait.
+3. Malware gets installed or information is stolen.
+4. The attacker gains unauthorized access.
 
 ## Impact of Baiting
 
-- Malware infection
-- Data theft
-- System compromise
-- Network security breaches
+Baiting can cause:
 
----
+* Malware infection
+* Data theft
+* Network compromise
+* Loss of confidential information
 
-## Real-World Example: Stuxnet Attack (2010)
+## Case Study: Stuxnet Attack (2010)
 
-The Stuxnet malware attack reportedly spread using infected USB devices.
+The Stuxnet malware attack demonstrated the risks of infected removable devices.
 
-Impact:
+**Impact:**
 
-- Targeted industrial control systems.
-- Damaged Iranian nuclear facilities.
-- Demonstrated the danger of removable media attacks.
-
----
+* Targeted industrial systems.
+* Damaged nuclear facility equipment.
+* Showed how physical devices can introduce cyber threats.
 
 ## Prevention Methods
 
-- Avoid connecting unknown USB devices.
-- Disable automatic execution of removable media.
-- Use antivirus protection.
-- Educate employees about suspicious devices.
-- Restrict external device usage.
+* Do not connect unknown USB devices
+* Disable automatic execution of removable media
+* Use antivirus solutions
+* Restrict external device access
 
 ---
 
-# 3. Other Social Engineering Attacks
+# 3. Other Social Engineering Techniques
 
 ## 3.1 Spear Phishing
 
-A targeted phishing attack aimed at specific individuals or organizations.
+Spear phishing is a targeted phishing attack against a specific person or organization.
 
 Example:
-An attacker sends a customized email to a company manager pretending to be the CEO.
+
+An attacker sends a personalized email pretending to be a company manager.
 
 Prevention:
 
-- Verify unusual requests.
-- Use email authentication technologies.
+* Verify unusual requests
+* Use email authentication
+* Educate employees
 
 ---
 
 ## 3.2 Vishing (Voice Phishing)
 
-Attackers use phone calls to trick victims.
+Vishing uses phone calls to manipulate victims.
 
 Example:
 
-A fake bank employee calls requesting account details.
+An attacker pretends to be a bank employee and asks for account details.
 
 Prevention:
 
-- Never provide sensitive information over unknown calls.
-- Verify caller identity.
+* Never reveal sensitive information on unknown calls
+* Verify caller identity
 
 ---
 
 ## 3.3 Tailgating
 
-A physical social engineering attack where an attacker follows an authorized person into a restricted area.
+Tailgating is a physical attack where an unauthorized person follows an employee into a restricted area.
 
 Prevention:
 
-- Use ID verification.
-- Implement biometric access systems.
+* Use ID cards
+* Implement biometric verification
+* Monitor physical access
 
 ---
 
 # 4. Comparison of Social Engineering Attacks
 
-| Attack Type | Technique | Main Target | Prevention |
-|------------|-----------|-------------|------------|
-| Phishing | Fake emails/websites | Login credentials | MFA, awareness training |
-| Pretexting | Fake identity/story | Sensitive information | Identity verification |
-| Baiting | Attractive traps | User curiosity | Device security policies |
-| Vishing | Phone manipulation | Personal information | Caller verification |
-| Tailgating | Physical access trick | Secure locations | Access control |
+| Attack Type | Method               | Target           | Prevention            |
+| ----------- | -------------------- | ---------------- | --------------------- |
+| Phishing    | Fake emails/websites | Credentials      | MFA and awareness     |
+| Pretexting  | Fake identity        | Sensitive data   | Identity verification |
+| Baiting     | Fake rewards/devices | User curiosity   | Device restrictions   |
+| Vishing     | Phone calls          | Personal details | Caller verification   |
+| Tailgating  | Physical entry       | Restricted areas | Access control        |
 
 ---
 
-# 5. General Preventive Measures Against Social Engineering
+# 5. Recommendations to Prevent Social Engineering
 
-Organizations can reduce social engineering risks by:
+## Employee Security Awareness
 
-## Employee Awareness Training
+Organizations should train employees to:
 
-Employees should learn:
+* Identify suspicious activities
+* Report security threats
+* Follow cybersecurity policies
 
-- How to identify suspicious messages
-- Safe internet practices
-- Reporting procedures
+## Multi-Factor Authentication
 
-## Multi-Factor Authentication (MFA)
+MFA provides extra protection even if passwords are stolen.
 
-MFA adds an additional security layer beyond passwords.
-
-## Security Policies
+## Strong Access Control
 
 Organizations should:
 
-- Limit access permissions
-- Enforce password policies
-- Monitor user activities
+* Limit user permissions
+* Monitor access activities
+* Follow least privilege principles
 
-## Regular Security Testing
+## Security Testing
 
-Techniques include:
+Regular testing should include:
 
-- Phishing simulations
-- Security audits
-- Penetration testing
+* Security audits
+* Phishing simulations
+* Penetration testing
 
-## Data Protection Practices
+## Secure Data Practices
 
-- Encrypt sensitive data.
-- Maintain secure backups.
-- Update software regularly.
+Important steps:
+
+* Encrypt sensitive information
+* Keep backups
+* Update systems regularly
 
 ---
 
 # 6. Conclusion
 
-Social engineering attacks remain one of the biggest cybersecurity threats because they exploit human trust rather than only technical weaknesses.
+Social engineering attacks are dangerous because they exploit human behavior instead of only technical weaknesses.
 
-Phishing, pretexting, and baiting demonstrate how attackers manipulate users to gain unauthorized access and steal valuable information.
+Phishing, pretexting, and baiting are widely used techniques that can lead to financial loss, data theft, and system compromise.
 
-Preventing social engineering requires a combination of:
+The best protection against social engineering requires:
 
-- Security awareness
-- Strong authentication
-- Organizational policies
-- Continuous monitoring
+* User awareness
+* Strong security policies
+* Multi-factor authentication
+* Continuous monitoring
 
-A security-aware culture is the strongest defense against social engineering threats.
+Creating a cybersecurity-aware environment is the most effective defense.
 
 ---
 
@@ -329,7 +298,6 @@ A security-aware culture is the strongest defense against social engineering thr
 
 1. Cybersecurity and Infrastructure Security Agency (CISA)
 2. Federal Bureau of Investigation (FBI) Cyber Crime Reports
-3. Verizon Data Breach Investigations Report
-4. IBM Security Reports
+3. Verizon Data Breach Investigation Reports
+4. IBM Security Research Reports
 5. OWASP Security Awareness Guidelines
-```
